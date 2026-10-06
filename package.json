@@ -1,0 +1,28 @@
+{
+  "name": "framework_pom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Single-data": "npx playwright test tests/ERPSingledata.spec.ts",
+    "Allure-Report": "npx allure generate allure-results --clean -o allure-reports && npx allure open allure-report",
+    "Json-data": "npx playwright test tests/Usingjsondata.spec.ts ",
+    "Html-reports": "npx playwright show-reports",
+    "Excel-data": "npx playwright test tests/UsingExceldata.spec.ts "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.1",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.12.2",
+    "dotenv": "^18.0.2"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0",
+    "xlsx": "^0.18.5"
+  }
+}
